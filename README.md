@@ -34,9 +34,11 @@ python3 vExplore.py
 
 ![image](https://github.com/HusseinOmar/vExplore/blob/main/newplot.png)
 
-# Demo
+# Demo Video
 
-[![Demo Video](https://img.youtube.com/vi/oAZ5I_hbEog/0.jpg)](https://www.youtube.com/watch?v=oAZ5I_hbEog)
+Click Image below
+
+[![Demo Video](https://img.youtube.com/vi/_H3xIVxV-rQ/0.jpg)](https://www.youtube.com/watch?v=_H3xIVxV-rQ)
 
 # License
 
