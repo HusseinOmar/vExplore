@@ -36,4 +36,4 @@ python3 vExplore.py
 
 # License
 
-![CISCO SAMPLE CODE LICENSE](https://developer.cisco.com/docs/licenses)
+[CISCO SAMPLE CODE LICENSE](https://developer.cisco.com/docs/licenses)
