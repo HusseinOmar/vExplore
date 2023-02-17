@@ -194,7 +194,6 @@ def runSelection():
     06 - (Feature Templates) => (Device Templates) => (Device)
     07 - (Device Templates) => (Feature Templates) => (Device)
     08 - (Site ID) => (Device)=> (Device Templates) => (Feature Templates)
-    09 - (Device Hardware Family) => (device Model) => (Feature Template)
     ----------------------------------------------------------------
     10 - Exit (select 10 or type "exit")
     ''')
