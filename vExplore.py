@@ -198,7 +198,7 @@ def runSelection():
     07 - (Device Templates) => (Feature Templates) => (Device)
     08 - (Site ID) => (Device)=> (Device Templates) => (Feature Templates)
     ----------------------------------------------------------------
-    09 - Exit (select 9 or type "exit")
+    xx - Exit ( ~ type xx or exit)
     ''')
 
     while True:
@@ -206,16 +206,16 @@ def runSelection():
         print('')
         select = input('   - Please select one of the above views [1-8]: ')
         try:
-            if select == 9:
-                exit()
             if select.lower() == 'exit':
-                exit()
+                break
+            elif select.lower() == 'xx':
+                break
             select = int(select)
             if select > 0 and select <= 8:
                 pass
             else:
                 print('')
-                print('  %% Please enter a value between 1 and 10')
+                print('  %% Please enter a value between 1 and 9')
                 continue
         except:
             print('')
