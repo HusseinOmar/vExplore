@@ -22,19 +22,10 @@ __copyright__ = "Copyright (c) 2021 Cisco and/or its affiliates."
 __license__ = "Cisco Sample Code License, Version 1.1"
 
 # ---> Imports
-from pprint import pprint
-from datetime import datetime
-from threading import Thread
-import datetime
-import csv
 import ipaddress
 import getpass
 import requests
-import itertools
 import json
-import sys
-import time
-from alive_progress import alive_bar
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 

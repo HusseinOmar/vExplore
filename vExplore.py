@@ -1,13 +1,8 @@
 import plotly.express as px
 from vAPI import main as vapi
-from pprint import pprint as pp
 import pandas as pd
-import itertools
 import concurrent.futures as conc
-from multiprocessing import Pool
-import itertools
 import time
-# https://plotly.com/python-api-reference/generated/plotly.express.treemap
 
 session = vapi()
 slower = 1
