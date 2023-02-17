@@ -29,7 +29,10 @@ def flash():
         try:
             if waitTime == '':
                 break
-            if int(waitTime):
+            elif float(waitTime):
+                slower = waitTime
+                break
+            elif int(waitTime):
                 slower = waitTime
                 break
         except:
@@ -195,7 +198,7 @@ def runSelection():
     07 - (Device Templates) => (Feature Templates) => (Device)
     08 - (Site ID) => (Device)=> (Device Templates) => (Feature Templates)
     ----------------------------------------------------------------
-    10 - Exit (select 10 or type "exit")
+    09 - Exit (select 9 or type "exit")
     ''')
 
     while True:
@@ -203,12 +206,12 @@ def runSelection():
         print('')
         select = input('   - Please select one of the above views [1-8]: ')
         try:
-            if select == 10:
-                break
+            if select == 9:
+                exit()
             if select.lower() == 'exit':
-                break
+                exit()
             select = int(select)
-            if select > 0 and select <= 10:
+            if select > 0 and select <= 8:
                 pass
             else:
                 print('')
