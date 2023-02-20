@@ -43,3 +43,18 @@ Click Image below
 # License
 
 [CISCO SAMPLE CODE LICENSE](https://developer.cisco.com/docs/licenses)
+
+## Caveats
+
+This script use multithreading, this can overwhelm your vManage, the default wait time between API calls is 1 sec by default. If the code fails in certain steps you will need to increase the timer accordingly.
+
+## 4. Questions and Contact Info
+
+If you have any issues or a pull request, you can submit a Issue or contact me directly。
+
+My Cisco CEC ID is: husseino
+My email address husseino@cisco.com
+
+## 5. License
+
+This project is licensed to you under the terms of the [Cisco Sample Code License](LICENSE).
