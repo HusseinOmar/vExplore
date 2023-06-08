@@ -19,7 +19,6 @@ from vAPI import main as vapi
 import pandas as pd
 import concurrent.futures as conc
 import time
-
 session = vapi()
 slower = 1
 
@@ -114,12 +113,15 @@ def task6(item):
     for i in item['deviceTemplates']:
         view2['deviceTemplateName'] = i['templateName']
         view2['deviceTemplateId'] = i['templateId']
-        for device in i['devices']:
-            view2['deviceName'] = device['host-name']
-            view2['deviceIp'] = device['deviceIP']
-            view2['deviceUUID'] = device['uuid']
-            view2['siteId'] = device['site-id']
-            dataSet2.append(view2)
+        try:
+            for device in i['devices']:
+                view2['deviceName'] = device['host-name']
+                view2['deviceIp'] = device['deviceIP']
+                view2['deviceUUID'] = device['uuid']
+                view2['siteId'] = device['site-id']
+                dataSet2.append(view2)
+        except:
+            pass
 
 
 def runningTasks():
